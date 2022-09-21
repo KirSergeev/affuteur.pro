@@ -34,17 +34,20 @@ let stylesMin =()=> {
         .pipe(cleanCSS())
         .pipe(rename('style.min.css'))
         // .on('error', console.log)
-        .pipe(dest('./src/css'))
+        .pipe(dest('./public/css'))
 }
 exports.stylesMin = stylesMin;
 
 let scripts =()=> {
-    return src(['./node_modules/jquery/dist/jquery.min.js','./src/js/**/*.js'])
+    return src([
+        // './node_modules/jquery/dist/jquery.min.js',
+        './src/js/**/*.js'
+    ])
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(rename('script.min.js'))
         .on('error', console.log)
-        .pipe(dest('./src/js/'));
+        .pipe(dest('./public/js/'));
 }
 exports.scripts = scripts;
 
@@ -53,7 +56,7 @@ exports.scripts = scripts;
 let Wch =(done)=> {
     watch('./src/scss/**/*.scss', series(stylesMin));
     watch('./src/js/**/*.js', series(scripts));
-    watch('./src/*.html', series(minifyHtml));
+    watch('./src/**/*.html', series(minifyHtml));
 }
 exports.Wch = Wch;
 

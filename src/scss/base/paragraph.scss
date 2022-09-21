@@ -1,0 +1,18 @@
+p {
+  padding: 6px 0;
+  line-height: 30px;
+  margin: 0;
+  &.p20 {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 7px 0;
+  }
+  &.p14 {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 11px 0;
+  }
+}
+.cGrey {
+  color: #919BA8;
+}

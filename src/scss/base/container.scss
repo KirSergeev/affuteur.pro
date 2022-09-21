@@ -1,0 +1,7 @@
+.container {
+  --row-gap: 30px;
+  width: var(--container);
+  max-width: var(--container);
+  padding: 0 calc(var(--row-gap)/2);
+  margin: 0 auto;
+}

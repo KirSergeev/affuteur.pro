@@ -1,0 +1,22 @@
+html {
+  min-height: 100%;
+}
+body {
+  --cText: #222222;
+  min-height: 100vh;
+  padding-left: var(--left-side);
+  color: var(--cText);
+}
+.bDark {
+  --cText: #CECECE;
+  margin-top: 45px;
+  padding: 45px 0;
+  background: #101011;
+  color: var(--cText);
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
