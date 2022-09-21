@@ -40,7 +40,7 @@ exports.stylesMin = stylesMin;
 
 let scripts =()=> {
     return src([
-        // './node_modules/jquery/dist/jquery.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
         './src/js/**/*.js'
     ])
         .pipe(concat('script.js'))
