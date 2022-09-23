@@ -1,6 +1,19 @@
 header {
+  position: fixed;
+  left: 0;
+  top: 0;
   height: 80px;
-  padding-top: 25px;
+  width: 100%;
+  padding-top: 27px;
+  background: white;
+  box-shadow: 0 0 2px 2px #0000;
+  transition: .3s;
+  &.transparent {
+    top: -100px;
+  }
+  &.fixh {
+    box-shadow: 0 0 2px 2px #0002;
+  }
   .container {
     display: flex;
     justify-content: space-between;
