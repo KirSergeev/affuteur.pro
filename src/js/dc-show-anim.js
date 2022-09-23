@@ -68,21 +68,21 @@ $(function () {
                 if (element_bounding.top > window_bottom ) {
                     elOpa = 0;
                 } else if (element_bounding.top < window_bottom && element_bounding.bottom > window_bottom)  {
-                    elOpa = ((element_bounding.top - window_bottom) / prEl * -1) / 100;
+                    elOpa = ((element_bounding.top - window_bottom) / prEl * -1) ;
                     // console.log('--elOpa--');
                     // console.log(elOpa);
                     elOpa = elOpa - ((1 - elOpa)/10);
                     // console.log(elOpa);
                     // console.log('--elOpa--');
                 } else if (element_bounding.top < window_top && element_bounding.bottom > window_top) {
-                    elOpa = element_bounding.bottom / prEl / 100;
+                    elOpa = element_bounding.bottom / prEl ;
                 } else if (element_bounding.top < window_top && element_bounding.bottom < window_top) {
                     elOpa = 0;
                 } else {
-                    elOpa = 1;
+                    elOpa = 100;
                 }
-                // console.log(elOpa);
-                $element.css({'opacity':elOpa})
+                console.log(elOpa);
+                $element.css({'--tran':elOpa+'px'})
 
             }
 
@@ -101,6 +101,8 @@ $(function () {
             } else {
                 position_class = 'sh-anim-within';
             }
+
+            // console.log(element_bounding.top - window_top);
 
             if ($element.hasClass('sh-anim-load') && !$element.hasClass('sh-anim-within')) {
                 $element.removeClass('sh-anim-below sh-anim-partially-below sh-anim-within sh-anim-partially-above sh-anim-above sh-anim-partially-below-quot sh-anim-above-quot');
