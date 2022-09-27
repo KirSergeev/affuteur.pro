@@ -1,0 +1,10 @@
+section.sec04 {
+  overflow: hidden;
+  .slickSlider {
+    padding: 60px 0;
+    .slick-track .im {
+      display: inline-flex;
+      padding: 30px;
+    }
+  }
+}
