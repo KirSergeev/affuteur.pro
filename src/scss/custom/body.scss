@@ -15,7 +15,7 @@ section {
   svg path {
     fill: var(--cText);
   }
-  p, h1 {
+  p, h1, form {
     max-width: 820px;
     margin-left: auto;
     margin-right: auto;
@@ -42,4 +42,20 @@ a {
 }
 .bGray {
   background: #F6F6F6;
+}
+.btn {
+  &.bDark {
+    padding: 7px 26px;
+    border-radius: 22px;
+    display: inline-block;
+  }
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #D6D6D6;
 }

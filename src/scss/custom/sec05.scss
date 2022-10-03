@@ -1,9 +1,27 @@
 section.sec05 {
+  background-image: url(../img/im05.webp), url(../img/im07.webp);
+  background-position: left top,right top;
+  background-size: 445px, 379px;
+  background-repeat: no-repeat, no-repeat;
   h1 {
     margin-top: 230px;
   }
   .img {
     text-align: center;
     padding: 250px 0 130px;
+  }
+  .container {
+    background-image: url(../img/im06.webp);
+    background-position: right 180px top 125px;
+    background-size: 237px;
+    background-repeat: no-repeat;
+  }
+}
+.nowebp {
+  section.sec05 {
+    background-image: url(../img/im05.png), url(../img/im07.png);
+    .container {
+      background-image: url(../img/im06.png);
+    }
   }
 }

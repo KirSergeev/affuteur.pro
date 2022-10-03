@@ -2,4 +2,12 @@ section.form {
   h1 {
     margin-top: 230px;
   }
+  form {
+    padding-bottom: 45px;
+    input {
+      border-radius: 0;
+      border: 0 solid #505050;
+      border-bottom-width: 1px;
+    }
+  }
 }
