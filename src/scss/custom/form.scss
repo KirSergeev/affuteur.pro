@@ -2,12 +2,29 @@ section.form {
   h1 {
     margin-top: 230px;
   }
+  p,form,h1 {
+    max-width: 660px;
+  }
   form {
     padding-bottom: 45px;
     input {
       border-radius: 0;
       border: 0 solid #505050;
       border-bottom-width: 1px;
+      outline: none;
+    }
+  }
+  .box-form {
+    margin-bottom: 10px;
+    display: flex;
+    input {
+      flex-grow: 1;
+      &::placeholder {
+        color: #D6D6D6;
+      }
+    }
+    input, label {
+      margin: 0 5px;
     }
   }
 }

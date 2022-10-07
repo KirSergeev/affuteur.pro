@@ -32,6 +32,7 @@ a {
   color: inherit;
   font-weight: 600;
 }
+
 .bDark {
   --cText: #CECECE;
   background: #101011;
@@ -40,9 +41,11 @@ a {
     color: var(--cText);
   }
 }
+
 .bGray {
   background: #F6F6F6;
 }
+
 .btn {
   &.bDark {
     padding: 7px 26px;
