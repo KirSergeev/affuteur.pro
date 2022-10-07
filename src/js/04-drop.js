@@ -2,8 +2,7 @@
 $(function() {
     console.log('start drop');
 
-    let $AcHead = $('.accordion .head'),
-        $drop = $('.drop'),
+    let $drop = $('.drop'),
         $head = $drop.find('.head');
 
     $drop.find('.toggle').click(function() {
@@ -23,35 +22,6 @@ $(function() {
             else $(this).parent().addClass('open').css({'--h': ($(this).parent().find('.body').innerHeight()) + 'px'});
         })
 
-    }
-
-    if ($('.head[data-target]')[0]) {
-        $AcHead.each(function (){
-            let acTarget = $(this).data('target');
-            console.log(acTarget);
-            if ($(acTarget).hasClass('open')) $(acTarget).css({'--h':($(acTarget).find('.body').innerHeight())+'px'});
-            else $(acTarget).css({'--h':0});
-        })
-        $AcHead.click(function() {
-            let acTarget = $(this).data('target');
-            if ($(acTarget).hasClass('open')) {
-                $(acTarget).css({'--h': 0}).removeClass('open');
-                $(this).removeClass('open');
-            }
-            else {
-                $(acTarget).addClass('open').css({'--h': ($(acTarget).find('.body').innerHeight()) + 'px'});
-                $(this).addClass('open');
-            }
-        })
-    }
-
-    let btnTarg = $('.btn[data-target]');
-    if (btnTarg[0]) {
-        btnTarg.click(function() {
-            let $modal = $(this).data('target');
-            $($modal).addClass('open');
-            $($body).addClass('modal-open');
-        })
     }
 
     // Close the dropdown if the user clicks outside of it
