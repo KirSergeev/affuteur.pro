@@ -3,6 +3,8 @@ section.about {
   background-position: left top,right top;
   background-size: 461px, 415px;
   background-repeat: no-repeat, no-repeat;
+  z-index: 3;
+  overflow: hidden;
   h1 {
     margin-top: 230px;
   }
@@ -13,6 +15,10 @@ section.about {
     background-position: left 230px top 125px,right 190px bottom -120px ;
     background-size: 175px, 237px;
     background-repeat: no-repeat, no-repeat;
+  }
+
+.wrap {
+//    z-index: 2;
   }
 }
 .nowebp {

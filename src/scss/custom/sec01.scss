@@ -1,0 +1,13 @@
+.sec01 {
+  z-index: 1;
+  overflow: hidden;
+  background: #FFF;
+  &.sh-anim-above {
+    visibility: hidden;
+    .wrap {
+    }
+  }
+  .wrap {
+    position: fixed;
+  }
+}

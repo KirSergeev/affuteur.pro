@@ -1,4 +1,26 @@
 section.sec03 {
+  z-index: 0;
+  overflow: hidden;
+  .wrap {
+    position: fixed;
+    top: 0;
+    transition: .3s;
+  }
+  &.sh-anim-below {
+//    visibility: hidden;
+  }
+
+&.sh-anim-partially-below,
+&.sh-anim-partially-below-quot {
+    z-index: 2;
+  }
+  &.sh-anim-partially-above {
+    .wrap {
+      position: static;
+      top: 0;
+    }
+  }
+
   h1 {
     margin-top: 230px;
   }

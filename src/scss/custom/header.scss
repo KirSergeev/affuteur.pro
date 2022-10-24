@@ -8,6 +8,7 @@ header {
   background: white;
   box-shadow: 0 0 2px 2px #0000;
   transition: .3s;
+  z-index: 100;
   &.transparent {
     top: -100px;
   }

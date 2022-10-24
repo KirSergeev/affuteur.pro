@@ -12,6 +12,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   svg path {
     fill: var(--cText);
   }
