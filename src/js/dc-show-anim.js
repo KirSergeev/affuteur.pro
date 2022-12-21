@@ -81,9 +81,20 @@ $(function () {
                 } else {
                     elOpa = 100;
                 }
-                console.log(elOpa);
+//                console.log(elOpa);
                 $element.css({'--tran':elOpa+'px'})
 
+            }
+
+            if($element.hasClass('psFix')) {
+                console.log(element_bounding.top);
+                console.log($(this));
+                $(this).css({'--h':($(this).find('.wrap').height())+'px'})
+                if (element_bounding.top > 0 ) {
+                    $(this).removeClass('vis')
+                } else {
+                    $(this).addClass('vis')
+                }
             }
 
             if (element_bounding.top > window_bottom ) {

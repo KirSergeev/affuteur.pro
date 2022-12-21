@@ -1,4 +1,6 @@
 section.sec03 {
+  --h: 100vh;
+  height: var(--h);
   z-index: 0;
   overflow: hidden;
   .wrap {
@@ -6,15 +8,8 @@ section.sec03 {
     top: 0;
     transition: .3s;
   }
-  &.sh-anim-below {
-//    visibility: hidden;
-  }
-
-&.sh-anim-partially-below,
-&.sh-anim-partially-below-quot {
+  &.vis {
     z-index: 2;
-  }
-  &.sh-anim-partially-above {
     .wrap {
       position: static;
       top: 0;
